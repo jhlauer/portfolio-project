@@ -1,0 +1,43 @@
+body {
+    background-color: pink;
+}
+
+p {
+    color: navy;
+}
+
+.fam {
+    margin: 20px;
+}
+
+ul {
+    color: navy;
+}
+
+h1 {
+    color: white;
+    display: block;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: navy;
+}
+
+.nav {
+    display: inline-block;
+    width:15%;
+    text-align: center;
+    background: orange;
+}
+
+.football {
+    margin-left: 75px;
+}
+
+.current {
+    text-transform: uppercase;
+}
