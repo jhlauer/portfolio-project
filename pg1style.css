@@ -1,3 +1,85 @@
+.container {
+    display: inline-flex;
+    padding: 25px;
+    margin: 15px;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item {
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.container2 {
+    display: inline-flex;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item2 {
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.item25 {
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 5px;
+}
+
+.container3 {
+    display: inline-flex;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item3 {
+    justify-content: space-between;
+    display: inline-block;
+    padding: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.h4-container{
+    display: inline-flex;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 body {
     background-color: pink;
 }
@@ -26,18 +108,15 @@ h3 {
 
 h4 {
     color: navy;
+    justify-content: space-between;
+    display: inline-block;
 }
-
 
 .nav {
     display: inline-block;
     width:15%;
     text-align: center;
     background: orange;
-}
-
-.football {
-    margin-left: 75px;
 }
 
 .current {
