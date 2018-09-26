@@ -17,6 +17,7 @@ ul {
 h1 {
     color: white;
     display: block;
+    position: relative;
 }
 
 h3 {
@@ -26,6 +27,7 @@ h3 {
 h4 {
     color: navy;
 }
+
 
 .nav {
     display: inline-block;
@@ -41,3 +43,4 @@ h4 {
 .current {
     text-transform: uppercase;
 }
+
