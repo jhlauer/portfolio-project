@@ -68,7 +68,7 @@
 }
 
 body {
-    background-color: rgb(210, 197, 241);
+    background-color: rgb(195, 173, 255);
     font-family: 'Slabo 27px', serif;
 }
 
@@ -85,13 +85,13 @@ ul {
 }
 
 h1 {
-    color: white;
+    color:navy;
     display: block;
     position: relative;
 }
 
 h3 {
-    color: white;
+    color:white;
 }
 
 h4 {
@@ -156,4 +156,5 @@ li {
   .icon {
       display: flex;
       justify-content: center;
+      color: white;
   }
