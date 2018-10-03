@@ -1,5 +1,16 @@
 .background {
-    background-image: url("images/IMG_2718.jpg");
-    border: 1px solid black;
-    background-position: right top;
+    background-image: url("../images/design/sfcity.jpg");
+    border: 3px solid orange;
+}
+
+.overlay {
+    background-color: rgba(60, 60, 60, 0.5)
+}
+
+.email {
+    font-size: 30px;
+}
+
+.overlay2 {
+    background-color: rgba(255, 254, 254, 0.5)
 }
