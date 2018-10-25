@@ -88,6 +88,7 @@ h1 {
     color:navy;
     display: block;
     position: relative;
+    font-size: xx-large;
 }
 
 .cal {
@@ -96,18 +97,28 @@ h1 {
 
 h3 {
     color:white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.graphic {
+    margin-top: 30px;
 }
 
 h4 {
     color: navy;
     justify-content: space-between;
     display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 25px;
 }
 
 .nav {
     display: block;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
 
 .current {
@@ -130,11 +141,13 @@ h4 {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 15px;
 }
     
 li {
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 10px;
 }
 
 
@@ -184,6 +197,10 @@ li {
       color: white;
   }
 
+  .button {
+      margin-bottom: 15px;
+  }
+
 @media only screen and (min-width: 750px){
     .container {
         -webkit-flex-flow: row wrap;
@@ -193,14 +210,18 @@ li {
         -webkit-flex-flow: row wrap;
         justify-content: space-around;
         margin: 0px;
-        }
+    }
+    .button {
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (min-width: 1100px) {
     .nav {
         display: inline-block;
         text-align: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 15px 5px;
     }
 
     .cal {
@@ -208,6 +229,6 @@ li {
     } 
 }
 
-@media all and (orientation: portrait) {
+@media all and (orientation: landscape) {
     background-color: pink;
 }
