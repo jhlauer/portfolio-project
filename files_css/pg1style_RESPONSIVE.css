@@ -41,18 +41,6 @@
     margin-bottom: 30px;
 }
 
-.h1-container {
-    display: inline-flex;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-}
 
 .h4-container{
     display: inline-flex;
@@ -89,12 +77,15 @@ h1 {
     display: block;
     position: relative;
     font-size: xx-large;
+    margin-left: 5%;
+    margin-top: 30px;
 }
 
 h2 {
     color: navy;
     margin-top: 10px;
     font-size: larger;
+    margin-left: 5%;
 }
 
 .cal {
@@ -209,6 +200,12 @@ li {
 
   .background {
       height: 80vh;
+  }
+
+  .smiley {
+      margin-left: 5%;
+      margin-top: 20px;
+      margin-bottom: 15px;
   }
 
 @media only screen and (min-width: 750px){
