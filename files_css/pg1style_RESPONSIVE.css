@@ -92,6 +92,9 @@ h2 {
 
 .cal {
     width: 80%;
+    display: block;
+    padding:15px;
+    margin: 20px;
 }
 
 h3 {
@@ -200,6 +203,7 @@ li {
 
   .button {
       margin-bottom: 15px;
+      margin-top: 20px;
   }
 
   .background {
@@ -211,6 +215,42 @@ li {
       margin-top: 20px;
       margin-bottom: 15px;
   }
+
+  .contacthead {
+      margin-bottom: 20px;
+  }
+
+  .contactbuttons {
+    display: flex;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .contactbuttons2 {
+    display: flex;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 
 @media only screen and (min-width: 950px){
     .container, .row {
@@ -229,6 +269,11 @@ li {
         margin-bottom: 0px;
     }
 
+    .contactbuttons {
+        -webkit-flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
 }
 
 @media only screen and (min-width: 950px) {
@@ -240,7 +285,9 @@ li {
     }
 
     .cal {
-        width: 90%;
+        width: 55%;
+        margin: 15px;
+        padding: 10px;
     } 
 
     .item3 {
