@@ -10,6 +10,42 @@
         <link rel="stylesheet" type="text/css" href="files_css/contact-style.css">
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <style>
+            .errormsg { 
+                color:red;
+                display:none; 
+            }
+        </style>
+        <script>
+            function checkForm(){
+                if (document.getElementById('firstname').value == "") {
+                    document.getElementById('nameerrormsg').style.display = "block";
+                    document.getElementById('nameerrormsg').value = "Please input your first name";
+                    return false;
+                    
+                }
+                
+                else if (document.getElementById('lastname').value == "") {
+                    document.getElementById('lasterrormsg').style.display = "block";
+                    document.getElementById('lasterrormsg').value = "Please input your last name";
+                    return false;
+                }
+                else if (document.getElementById('email').value == "") {
+                    document.getElementById('emailerrormsg').style.display = "block";
+                    document.getElementById('emailerrormsg').value = "Please input your email address";
+                    return false;
+                }
+                else if (document.getElementById('msg').value == "") {
+                    document.getElementById('msgerrormsg').style.display = "block";
+                    document.getElementById('msgerrormsg').value = "Please input your email address";
+                    return false;
+                }
+                else {
+                    return true;
+                }
+        
+            }  
+            </script>
     </head>
     <body>
         <header>
@@ -41,17 +77,25 @@
 
             <div class="contacthead"><h1>Or send me a message!</h1></div>
             <div class="contactbuttons formdiv">
-                <form action="#" method="POST" class="formdiv">
+                <form method="POST" onsubmit="return checkForm();" class="formdiv">
                     <fieldset>
                             <label for="firstname">First Name:<br/>
-                            <input type="text" id="firstname" class="flex-item form" name="firstname"></label><br/>
+                            <input type="text" id="firstname" class="flex-item form" name="firstname" id="firstname"></label><br/>
+                            <p class="errormsg" id="nameerrormsg">Please enter your first name above!</p>
+
                             <label for="lastname">Last Name:<br/>
-                            <input type="text" id="lastname" class="flex-item form" name="lastname"></label><br/>
+                            <input type="text" id="lastname" class="flex-item form" name="lastname" if="lastname"></label><br/>
+                            <p class="errormsg" id="lasterrormsg">Please enter your last name above!</p>
+
                             <label for="email">Email:<br/>
-                            <input type=”email” class="flex-item form" name=”email”></label><br/>
+                            <input type=”email” class="flex-item form" name=”email” id="email"></label><br/>
+                            <p class="errormsg" id="emailerrormsg">Please enter your email above!</p>
+
                             <label for="message">Message:</br>
-                            <textarea type="textarea" class="flex-item form msg" name="message"></textarea><br/>
-                            <input type="button" value="Send!" name="send" id="sendbutton">
+                            <textarea type="textarea" class="flex-item form msg" name="message" id="msg"></textarea><br/>
+                            <p class="errormsg" id="msgerrormsg">Please enter your message above!</p>
+                            
+                            <input type="submit" value="Send!" name="send" id="sendbutton">
                             </label>
                     </fieldset>
                 </form>
