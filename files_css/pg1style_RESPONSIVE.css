@@ -218,6 +218,7 @@ li {
 
   .contacthead {
       margin-bottom: 20px;
+      margin-left: 30%;
   }
 
   .contactbuttons {
@@ -272,6 +273,11 @@ li {
     .contactbuttons {
         -webkit-flex-flow: row wrap;
         justify-content: space-evenly;
+    }
+
+    .contacthead {
+        margin-bottom: 20px;
+        margin-left: 40%;
     }
 
 }
