@@ -11,6 +11,7 @@
     
     -webkit-flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .item {
@@ -61,7 +62,8 @@ body {
 }
 
 p {
-    color: navy;
+    color: black;
+    letter-spacing: large;
 }
 
 .fam {
@@ -69,11 +71,11 @@ p {
 }
 
 ul {
-    color: navy;
+    color: black;
 }
 
 h1 {
-    color:navy;
+    color:black;
     display: block;
     position: relative;
     font-size: xx-large;
@@ -82,7 +84,7 @@ h1 {
 }
 
 h2 {
-    color: navy;
+    color: black;
     margin-top: 10px;
     font-size: larger;
     margin-left: 5%;
@@ -104,11 +106,12 @@ h3 {
 }
 
 h4 {
-    color: navy;
+    color: black;
     justify-content: space-between;
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 25px;
+    margin-top: 20px;
 }
 
 .nav {
@@ -123,7 +126,7 @@ h4 {
 }
 
 .always {
-    color: yellow;
+    color: purple;
     font-size: 20px;
     padding: 10px;
 }
@@ -138,7 +141,7 @@ h4 {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
     
@@ -180,7 +183,7 @@ li {
   
   .flex-item {
     padding: 5px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     text-align: center;
   }
 
@@ -210,18 +213,22 @@ li {
   }
 
 @media only screen and (min-width: 950px){
-    .container {
+    .container, .row {
         -webkit-flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
+        
     }
     .flex-container2 {
         -webkit-flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
         margin: 0px;
     }
     .button {
         margin-bottom: 0px;
     }
+
 }
 
 @media only screen and (min-width: 950px) {

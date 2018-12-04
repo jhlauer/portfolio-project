@@ -9,5 +9,7 @@
 .controls {
 	margin-top: 25px;
 	margin-left: 25px;
+	align-items: center;
+	justify-content: center;
 }
 
