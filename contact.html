@@ -22,7 +22,6 @@
                     document.getElementById('nameerrormsg').style.display = "block";
                     document.getElementById('nameerrormsg').value = "Please input your first name";
                     return false;
-                    
                 }
                 
                 else if (document.getElementById('lastname').value == "") {
@@ -41,9 +40,8 @@
                     return false;
                 }
                 else {
-                    return true;
+                    return true;   
                 }
-        
             }  
             </script>
     </head>
@@ -58,18 +56,19 @@
                             <li class="nav"><a class="always" href="index.html">Home</a></li>
                             <li class="nav"><a class="always" href="graphicdesign.html">Graphic Design</a></li>
                             <li class="nav"><a class="always" href="photography.html">Photography</a></li>
-                            <li class="nav"><a class="always" href="lauer.resume.pdf">Resume</a></li>
+                            <li class="nav"><a class="always" href="lauer.resume.pdf" target="_blank">Resume</a></li>
                             <li class="nav"><a class="current always" href="contact.html">Contact</a></li>
                         </ul>
                     </nav></div>
             </div>
+            <a href="#content" class="skip">Skip to content</a>
         </header>
-        <main>
+        <main id="content">
             <div class="contacthead"><h1>To contact me:</h1></div>
                 <div class="contactbuttons">
                     <div class="flex-item button"><a href="mailto:juliahlauer@gmail.com?Subject=Contact" target="_top"><img src="images/email.jpg" alt="email button" width="150" height="150"></a></div>
-                    <div class="flex-item button"><a href=https://www.linkedin.com/in/julia-lauer-04109b137><img src="images/li.png" alt="LinkedIn logo" alt="LinkedIn button" width="150" height="150"></a></div>
-                    <div class="flex-item button"><a href="https://www.behance.net/juliahlaue101f"><img src="images/behance.png" alt="Bhenace logo" alt="Behance button" width="150" height="150"></a></div>
+                    <div class="flex-item button"><a href=https://www.linkedin.com/in/julia-lauer-04109b137 target="_blank"><img src="images/li.png" alt="LinkedIn logo" alt="LinkedIn button" width="150" height="150"></a></div>
+                    <div class="flex-item button"><a href="https://www.behance.net/juliahlaue101f" target="_blank"><img src="images/behance.png" alt="Bhenace logo" alt="Behance button" width="150" height="150"></a></div>
                 </div>
                 <div class="contactbuttons2">
                     <iframe title="calendar" class="cal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jhlauer%40umich.edu&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="600" height="500"></iframe>
@@ -101,5 +100,6 @@
                 </form>
             </div>
         </main>
+        <footer></footer>
     </body>
 </html>
