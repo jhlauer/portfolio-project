@@ -57,7 +57,7 @@
 }
 
 body {
-    background-color: rgb(195, 173, 255);
+    background-color: rgb(215, 204, 247);
     font-family: 'Slabo 27px', serif;
 }
 
@@ -98,10 +98,11 @@ h2 {
 }
 
 h3 {
-    color:white;
+    color:purple;
     margin-bottom: 15px;
     margin-left: 10px;
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .graphic {
