@@ -66,6 +66,16 @@ p {
     letter-spacing: large;
 }
 
+.flip {
+    margin-bottom: 5px;
+    color: purple;
+}
+
+.home {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
 .fam {
     margin: 20px;
 }
