@@ -140,15 +140,18 @@ h4 {
 }
 
 .always {
-    color: purple;
+    color: blueviolet;
     font-size: 20px;
     padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
 }
 
 .prof {
     text-align: center;
     align-items: center;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .proff {
@@ -196,81 +199,82 @@ li {
     justify-content: center;
 }
   
-  .flex-item {
-    padding: 5px;
-    /* margin-top: 10px; */
-    text-align: center;
-  }
+.flex-item {
+padding: 5px;
+/* margin-top: 10px; */
+text-align: center;
+}
 
-  .text {
-      padding-left: 15px;
-      padding-right: 15px;
-  }
+.text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-  .icon {
-      display: flex;
-      justify-content: center;
-      color: white;
-  }
-
-  .button {
-      margin-bottom: 15px;
-      margin-top: 20px;
-  }
-
-  .background {
-      height: 80vh;
-  }
-
-  .smiley {
-      margin-left: 5%;
-      margin-top: 20px;
-      margin-bottom: 15px;
-  }
-
-  .contacthead {
-      margin-bottom: 20px;
-      margin-left: 35%;
-  }
-
-  .contactbuttons {
+.icon {
     display: flex;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -webkit-flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-    width: 60%;
-    margin-left: 20%;
-  }
+    color: white;
+}
 
-  .contactbuttons2 {
-    display: flex;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -webkit-flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
+.button {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
 
-  .skip {
-    position: absolute;
-    top: -1000px;
-    left: -1000px;
-    height: 1px;
-    width: 1px;
-    text-align: left;
-    overflow: hidden;
+.background {
+    height: 80vh;
+}
+
+.smiley {
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contacthead {
+    margin-bottom: 20px;
+    margin-left: 35%;
+}
+
+.contactbuttons {
+display: flex;
+
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-webkit-flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+width: 60%;
+margin-left: 20%;
+}
+
+.contactbuttons2 {
+display: flex;
+
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-webkit-flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+}
+
+/* JUMP TO CONTENT */
+.skip {
+position: absolute;
+top: -1000px;
+left: -1000px;
+height: 1px;
+width: 1px;
+text-align: left;
+overflow: hidden;
 }
 
 a.skip:active, 
@@ -283,7 +287,9 @@ a.skip:hover {
     overflow: visible; 
 }
 
-.flip-card {
+/* FLIPCARD */
+.no-flip {
+    display: block;
     background-color: transparent;
     width: 300px;
     height: 200px;
@@ -291,123 +297,148 @@ a.skip:hover {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-left: 30%;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  .flip-card-back {
-    background-color: rgb(174, 196, 238);
-    color: white;
-    transform: rotateY(180deg);
-  }
+    margin-left: 20%;
+}
 
- 
-  .mySlides {display: none}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 5px;
-    margin-top: -22px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+.flip-card {
+    display: none;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 20%;
+}
 
-  .dotcontrols {
-    text-align:center;
-    margin-bottom: 45px;
-  }
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+.flip-card-back {
+background-color: rgb(174, 196, 238);
+color: white;
+transform: rotateY(180deg);
+}
+
+/* CAROUSEL */
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 5px;
+margin-top: -22px;
+color: black;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.dotcontrols {
+text-align:center;
+margin-bottom: 45px;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
   
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* MEDIA QUERIES */
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-  }
+}
 
+@media only screen and (min-width: 450px) {
+    .flip-card {
+        display: block;
+    }
+    .no-flip {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 950px){
     .container, .row {
         -webkit-flex-flow: row wrap;
         justify-content: space-around;
-        align-items: center;
-        
+        align-items: center;   
     }
     .flex-container2 {
         -webkit-flex-flow: row wrap;
@@ -418,21 +449,17 @@ a.skip:hover {
     .button {
         margin-bottom: 0px;
     }
-
     .contactbuttons {
         -webkit-flex-flow: row wrap;
         justify-content: space-evenly;
     }
-
     .contacthead {
         margin-bottom: 20px;
         margin-left: 40%;
     }
-
     .flip-card {
         margin-left: 40%;
     }
-
 }
 
 @media only screen and (min-width: 950px) {
@@ -442,13 +469,11 @@ a.skip:hover {
         justify-content: space-around;
         margin: 15px 5px;
     }
-
     .cal {
         width: 55%;
         margin: 15px;
         padding: 10px;
     } 
-
     .item3 {
         margin: 0px;
     }
