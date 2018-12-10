@@ -31,5 +31,10 @@
 
 .formdiv {
     margin-bottom: 50px;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
